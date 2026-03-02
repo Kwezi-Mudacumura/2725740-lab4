@@ -1,0 +1,63 @@
+/* ===== Loading Spinner ===== */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* ===== Country Card ===== */
+.country-card {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ===== Border Grid ===== */
+.border-grid {
+    display: grid; /* Required */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.border-grid div {
+    background: #f0f0f0;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* ===== Error Styling ===== */
+.error {
+    color: #ffffff;
+    background-color: #e74c3c;
+    padding: 10px;
+    margin: 15px auto;
+    max-width: 400px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
